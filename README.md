@@ -27,7 +27,7 @@ In this part, you will understand and learn how to implement the following Machi
    ![screenshot from 2017-05-27 00-11-50](https://cloud.githubusercontent.com/assets/15044221/26509717/cc5ccae2-427b-11e7-94f6-6675965fc4c0.png)
    ![4](https://cloud.githubusercontent.com/assets/15044221/26510293/708f2266-427e-11e7-88df-9811b75ec53c.png)
 
-```
+```python
 # Simple Linear Regression
 
 # Importing the libraries
@@ -45,6 +45,5 @@ y = dataset.iloc[:, 1].values
 from sklearn.cross_validation import train_test_split
 X_train, X_test, y_train, y_test = train_test_split(X, y, test_size = 1/3, random_state = 0)
  
-
 ```
 
