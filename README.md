@@ -22,4 +22,6 @@ In this part, you will understand and learn how to implement the following Machi
 6. Random Forest Classification 
 	 
  ### 1. Simple Linear Regression 
-   ------------------------------------
+   -------------------------------
+   ![screenshot from 2017-05-27 00-07-36](https://cloud.githubusercontent.com/assets/15044221/26509615/56b55336-427b-11e7-9a25-4dfb295a7a08.png)
+
