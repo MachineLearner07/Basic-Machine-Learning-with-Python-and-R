@@ -40,4 +40,4 @@ X_train, X_test, y_train, y_test = train_test_split(X, y, test_size = 0.2, rando
 from sklearn.preprocessing import StandardScaler
 sc_X = StandardScaler()
 X_train = sc_X.fit_transform(X_train)
-x_test = sc_X.transform(x_test)
+X_test = sc_X.transform(X_test)
