@@ -18,13 +18,31 @@ import pandas as pd
 dataset = pd.read_csv('Data.csv')
 X = dataset.iloc[:, :-1].values
 y = dataset.iloc[:, 3].values
-
+```
+#### Dataset : 
+![selection_013](https://cloud.githubusercontent.com/assets/15044221/26520233/428819fa-42f0-11e7-8c1b-b531daccda4b.png)
+```python
 # Taking care of missing data
 from sklearn.preprocessing import Imputer
 imputer = Imputer(missing_values = 'NaN', strategy = 'mean', axis = 0)
 imputer = imputer.fit(X[:, 1:3])
 X[:, 1:3] = imputer.transform(X[:, 1:3])
 
+#### Missing values : X ->
+array([['France', 44.0, 72000.0],
+       ['Spain', 27.0, 48000.0],
+       ['Germany', 30.0, 54000.0],
+       ['Spain', 38.0, 61000.0],
+       ['Germany', 40.0, 63777.77777777778],
+       ['France', 35.0, 58000.0],
+       ['Spain', 38.77777777777778, 52000.0],
+       ['France', 48.0, 79000.0],
+       ['Germany', 50.0, 83000.0],
+       ['France', 37.0, 67000.0]], dtype=object)
+#### Missing values : y -> 
+ array(['No', 'Yes', 'No', 'No', 'Yes', 'Yes', 'No', 'Yes', 'No', 'Yes'], dtype=object)
+```
+```python
 # Encoding categorical data
 from sklearn.preprocessing import LabelEncoder, OneHotEncoder
 labelencoder_X = LabelEncoder()
@@ -62,9 +80,9 @@ In this part, you will understand and learn how to implement the following Machi
 	 
  ### 1. Simple Linear Regression 
    -------------------------------
-   ![screenshot from 2017-05-27 00-07-36](https://cloud.githubusercontent.com/assets/15044221/26509615/56b55336-427b-11e7-9a25-4dfb295a7a08.png)
-   ![screenshot from 2017-05-27 00-11-50](https://cloud.githubusercontent.com/assets/15044221/26509717/cc5ccae2-427b-11e7-94f6-6675965fc4c0.png)
-   ![4](https://cloud.githubusercontent.com/assets/15044221/26510293/708f2266-427e-11e7-88df-9811b75ec53c.png)
+![selection_005](https://cloud.githubusercontent.com/assets/15044221/26520188/934432bc-42ef-11e7-847c-5f4c2c66d945.png)
+![selection_004](https://cloud.githubusercontent.com/assets/15044221/26520189/965d2a12-42ef-11e7-894f-5461c5292c2f.png)
+![selection_003](https://cloud.githubusercontent.com/assets/15044221/26520191/9c00697a-42ef-11e7-8547-aa20a223f7a3.png)
 
 ```python
 import numpy as np
