@@ -76,92 +76,48 @@ dataset = pd.read_csv('Salary_Data.csv')
 X = dataset.iloc[:, :-1].values
 y = dataset.iloc[:, 1].values
 
-
 # Splitting the dataset into Training set and Test set
 from sklearn.cross_validation import train_test_split
 X_train, X_test, y_train, y_test = train_test_split(X, y, test_size = 1/3, random_state = 0)
-
-dataset
-Out[7]: 
-    YearsExperience    Salary
-0               1.1   39343.0
-1               1.3   46205.0
-2               1.5   37731.0
-3               2.0   43525.0
-4               2.2   39891.0
-5               2.9   56642.0
-6               3.0   60150.0
-7               3.2   54445.0
-8               3.2   64445.0
-9               3.7   57189.0
-10              3.9   63218.0
-11              4.0   55794.0
-12              4.0   56957.0
-13              4.1   57081.0
-14              4.5   61111.0
-15              4.9   67938.0
-16              5.1   66029.0
-17              5.3   83088.0
-18              5.9   81363.0
-19              6.0   93940.0
-20              6.8   91738.0
-21              7.1   98273.0
-22              7.9  101302.0
-23              8.2  113812.0
-24              8.7  109431.0
-25              9.0  105582.0
-26              9.5  116969.0
-27              9.6  112635.0
-28             10.3  122391.0
-29             10.5  121872.0
-
-X_train
-Out[8]: 
-array([[  2.9],
-       [  5.1],
-       [  3.2],
-       [  4.5],
-       [  8.2],
-       [  6.8],
-       [  1.3],
-       [ 10.5],
-       [  3. ],
-       [  2.2],
-       [  5.9],
-       [  6. ],
-       [  3.7],
-       [  3.2],
-       [  9. ],
-       [  2. ],
-       [  1.1],
-       [  7.1],
-       [  4.9],
-       [  4. ]])
-
-X_test
-Out[9]: 
-array([[  1.5],
-       [ 10.3],
-       [  4.1],
-       [  3.9],
-       [  9.5],
-       [  8.7],
-       [  9.6],
-       [  4. ],
-       [  5.3],
-       [  7.9]])
-
-y_train
-Out[10]: 
-array([  56642.,   66029.,   64445.,   61111.,  113812.,   91738.,
-         46205.,  121872.,   60150.,   39891.,   81363.,   93940.,
-         57189.,   54445.,  105582.,   43525.,   39343.,   98273.,
-         67938.,   56957.])
-
-y_test
-Out[11]: 
-array([  37731.,  122391.,   57081.,   63218.,  116969.,  109431.,
-        112635.,   55794.,   83088.,  101302.])
- 
 ```
+#### Dataset : 
+![selection_006](https://cloud.githubusercontent.com/assets/15044221/26520095/d50c5456-42ed-11e7-8ac3-f6cfb52664a3.png)
+![selection_007](https://cloud.githubusercontent.com/assets/15044221/26520096/d8ca863a-42ed-11e7-8a65-6746d5ed9476.png)
+#### X_train, X_test, y_train, y_test : 
+![selection_008](https://cloud.githubusercontent.com/assets/15044221/26520097/e0e9e720-42ed-11e7-9b74-ca562c7ef0a3.png)
+![selection_009](https://cloud.githubusercontent.com/assets/15044221/26520099/e2311e8c-42ed-11e7-8533-ea8ee47a7915.png)
+```python
+# Fitting simple linear Regression to the Training set
+from sklearn.linear_model import LinearRegression
+regressor = LinearRegression()
+regressor.fit(X_train, y_train)
 
+# Predicting the Test results
+y_pred = regressor.predict(X_test)
+```
+#### y_pred : 
+![selection_010](https://cloud.githubusercontent.com/assets/15044221/26520100/e5d84c4a-42ed-11e7-8cf0-0b817fc5361f.png)
+```python
+# Visualising the Training set results
+plt.scatter(X_train, y_train, color = 'red')
+plt.plot(X_train, regressor.predict(X_train), color = 'blue')
+plt.title('Salary vs Experience(Training set)')
+plt.xlabel('Years of Experience')
+plt.ylabel('Salay')
+plt.show()
+```
+#### Visualising the Training set results
+![selection_011](https://cloud.githubusercontent.com/assets/15044221/26520101/e87ebfe2-42ed-11e7-8038-42ed3730767d.png)
+N.B : blue color = Real values, red color = Predicting values
+```python
+# Visualising the Test set results
+plt.scatter(X_test, y_test, color = 'red')
+plt.plot(X_train, regressor.predict(X_train), color = 'blue')
+plt.title('Salary vs Experience(Test set)')
+plt.xlabel('Years of Experience')
+plt.ylabel('Salay')
+plt.show()
+```
+#### Visualising the Test set results
+![selection_012](https://cloud.githubusercontent.com/assets/15044221/26520103/ed451ac6-42ed-11e7-9b06-9e38fec899ad.png)
+N.B : blue color = Real values, red color = Predicting values
