@@ -87,6 +87,9 @@ In this part, you will understand and learn how to implement the following Machi
 	 
  ### 1. Simple Linear Regression 
    -------------------------------
+   ##### 
+   Simple linear regression is a statistical method that allows us to summarize and study relationships between two continuous (quantitative) variables. 
+   
 ![selection_005](https://cloud.githubusercontent.com/assets/15044221/26520188/934432bc-42ef-11e7-847c-5f4c2c66d945.png)
 ![selection_004](https://cloud.githubusercontent.com/assets/15044221/26520189/965d2a12-42ef-11e7-894f-5461c5292c2f.png)
 ![selection_003](https://cloud.githubusercontent.com/assets/15044221/26520191/9c00697a-42ef-11e7-8547-aa20a223f7a3.png)
@@ -146,3 +149,8 @@ plt.show()
 #### Visualising the Test set results
 ![selection_012](https://cloud.githubusercontent.com/assets/15044221/26520103/ed451ac6-42ed-11e7-9b06-9e38fec899ad.png)
 N.B : blue color = Real values, red color = Predicting values
+
+ ### 2. Multiple Linear Regression 
+  ##### 
+  
+ 
