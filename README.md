@@ -151,6 +151,12 @@ plt.show()
 N.B : blue color = Real values, red color = Predicting values
 
  ### 2. Multiple Linear Regression 
-  ##### 
+  ##### Def:
+  Multiple linear regression (MLR) is a statistical technique that uses several explanatory variables to predict the outcome of a response variable. The goal of multiple linear regression (MLR) is to model the relationship between the explanatory and response variables.
+
+The model for MLR, given n observations, is:
+
+yi = B0 + B1xi1 + B2xi2 + ... + Bpxip + Ei where i = 1,2, ..., n
+
   
  
