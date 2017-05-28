@@ -1,5 +1,12 @@
 # Basic-Machine-Learning-with-Python-and-R
 
+## What is Machine Learning ?
+According to Tom Michel : 
+	A computer program is said to learn from experience E with respect to some class of tasks T and performance measure P, 	         if its performance at tasks in T, as measured by P, improves with experience E.
+	
+According to Arthur Samuel : 
+	Field of study that gives computers the ability to learn without being explicitely programmed.
+	
 ## Part 1.2 - Data Preprocessing 
 
 Data pre-processing is an important step in the data mining process. The phrase"garbage in, garbage out"is particularly applicable to data mining andmachine learningprojects. Data-gathering methods are often loosely controlled, resulting inout-of-rangevalues (e.g., Income: ?100), impossible data combinations (e.g., Sex: Male, Pregnant: Yes),missing values, etc. Analyzing data that has not been carefully screened for such problems can produce misleading results. Thus, the representation andquality of datais first and foremost before running an analysis. 
