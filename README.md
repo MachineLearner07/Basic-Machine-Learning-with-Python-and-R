@@ -175,7 +175,6 @@ dataset = pd.read_csv('50_Startups.csv')
 X = dataset.iloc[:, :-1].values
 y = dataset.iloc[:, 4].values
 
-```
 ###### X : 
 array([[165349.2, 136897.8, 471784.1, 'New York'],
        [162597.7, 151377.59, 443898.53, 'California'],
@@ -227,6 +226,7 @@ array([[165349.2, 136897.8, 471784.1, 'New York'],
        [0.0, 135426.92, 0.0, 'California'],
        [542.05, 51743.15, 0.0, 'New York'],
        [0.0, 116983.8, 45173.06, 'California']], dtype=object)
+```
 ```python
 # Encoding categorical data
 # Endcoding the Independent variable
@@ -236,4 +236,29 @@ X[:, 3] = labelencoder_X.fit_transform( X[:, 3] )
 onehotencoder = OneHotEncoder(categorical_features = [3])
 X = onehotencoder.fit_transform(X).toarray()
 ```
+##### X:
+![selection_020](https://cloud.githubusercontent.com/assets/15044221/26590542/b0366b8a-457c-11e7-9b8c-2d2effc1e627.png)
+
+```python
+# Avoiding the Dummy variable trap
+X = X[:, 1:]
+```
+##### X:
+![selection_021](https://cloud.githubusercontent.com/assets/15044221/26590671/04bc5066-457d-11e7-9b78-70e15cb09eaa.png)
+
+```python
+# Splitting the dataset into the Training set and Test set
+from sklearn.cross_validation import train_test_split
+X_train, X_test, y_train, y_test = train_test_split(X, y, test_size = 0.2, random_state = 0)
+
+# Fitting Multiple Linear Regression for the Training set
+from sklearn.linear_model import LinearRegression
+regressor = LinearRegression()
+regressor.fit(X_train, y_train)
+
+# Predicting the Test set result
+y_pred = regressor.predict(X_test)
+```
+##### y_pred:
+![selection_022](https://cloud.githubusercontent.com/assets/15044221/26590778/5bf98bd2-457d-11e7-88f6-32462d1bb1c2.png)
  
