@@ -23,6 +23,7 @@
   `y = dataset.iloc[:, 4].values`
 
 ## Encoding categorical data
+  // Whenever a dataset consists of categorical data , we need to encode that data for process . But in that case, we have to always concern about dummy variable trap.
 
   `from sklearn.preprocessing import LabelEncoder, OneHotEncoder`
   
@@ -34,8 +35,10 @@
   
   `X = onehotencoder.fit_transform(X).toarray()`
 
-# Avoiding the Dummy Variable Trap
-X = X[:, 1:]
+## Avoiding the Dummy Variable Trap
+// Though We don't have to code for avoiding dummy variable trap as we are using library but here is a sample code to avoid dummy variable trap by eliminating one encoded column
+
+  `X = X[:, 1:]`
 
 # Splitting the dataset into the Training set and Test set
 from sklearn.cross_validation import train_test_split
