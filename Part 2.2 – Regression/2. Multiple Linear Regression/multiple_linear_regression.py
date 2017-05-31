@@ -24,7 +24,6 @@ X[:, 3] = labelencoder_X.fit_transform( X[:, 3] )
 onehotencoder = OneHotEncoder(categorical_features = [3])
 X = onehotencoder.fit_transform(X).toarray()
 
-
 # Avoiding the Dummy variable trap
 X = X[:, 1:]
 
@@ -39,6 +38,7 @@ regressor.fit(X_train, y_train)
 
 # Predicting the Test set result
 y_pred = regressor.predict(X_test)
+
 
 # Building the optimal model using Backword Elimination
 import statsmodels.formula.api as sm
