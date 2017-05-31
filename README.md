@@ -261,4 +261,28 @@ y_pred = regressor.predict(X_test)
 ```
 ##### y_pred:
 ![selection_022](https://cloud.githubusercontent.com/assets/15044221/26590778/5bf98bd2-457d-11e7-88f6-32462d1bb1c2.png)
+
+##### Backword Elimination
+![selection_023](https://cloud.githubusercontent.com/assets/15044221/26626536/56bf4a5c-4619-11e7-8dcf-cf5056da4402.png)
+```python
+# Building the optimal model using Backword Elimination
+import statsmodels.formula.api as sm
+X = np.append(arr = np.ones((50,1)).astype(int) , values = X, axis = 1)
+X_opt = X[:, [0,1,2,3,4,5]]
+regressor_OLS = sm.OLS(endog = y, exog = X_opt).fit()
+regressor_OLS.summary()
+X_opt = X[:, [0,1,3,4,5]]
+regressor_OLS = sm.OLS(endog = y, exog = X_opt).fit()
+regressor_OLS.summary()
+X_opt = X[:, [0,3,4,5]]
+regressor_OLS = sm.OLS(endog = y, exog = X_opt).fit()
+regressor_OLS.summary()
+X_opt = X[:, [0,3,5]]
+regressor_OLS = sm.OLS(endog = y, exog = X_opt).fit()
+regressor_OLS.summary()
+X_opt = X[:, [0,3]]
+regressor_OLS = sm.OLS(endog = y, exog = X_opt).fit()
+regressor_OLS.summary()
+```
+
  
