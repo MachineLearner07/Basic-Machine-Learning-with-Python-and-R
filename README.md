@@ -289,6 +289,9 @@ regressor_OLS.summary()
 ###### Def:
 	In statistics, polynomial regression is a form of regression analysis in which the relationship between the independent variable x and the dependent variable y is modelled as an nth degree polynomial in x.
 ![325px-polyreg_scheffe svg](https://cloud.githubusercontent.com/assets/15044221/26672705/f84bc39c-46db-11e7-91db-16a12a54d233.png)
+
+![selection_024](https://cloud.githubusercontent.com/assets/15044221/26673086/7cc95fac-46dd-11e7-9f5a-d28b475b20b3.png)
+
 	
 	
 	
