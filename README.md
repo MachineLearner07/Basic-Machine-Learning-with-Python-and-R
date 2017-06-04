@@ -356,5 +356,5 @@ lin_reg_2.predict(poly_reg.fit_transform(6.5))
 
 Out[36]: array([ 158862.45265153])
 
-``
+```
 
