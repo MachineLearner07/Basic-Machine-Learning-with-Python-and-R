@@ -496,7 +496,7 @@ Let's answer each of these questions one by one:
 
 1. What are the pros and cons of each model ?
 
-Please find here a cheat-sheet that gives you all the pros and the cons of each regression model.
+Please find  <a href="http://www.superdatascience.com/wp-content/uploads/2017/02/Regression-Pros-Cons.pdf/">here</a> a cheat-sheet that gives you all the pros and the cons of each regression model.
 
 2. How do I know which model to choose for my problem ?
 
