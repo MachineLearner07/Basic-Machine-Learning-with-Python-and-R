@@ -496,7 +496,7 @@ Let's answer each of these questions one by one:
 
 1. What are the pros and cons of each model ?
 
-Please find  <a href="http://www.superdatascience.com/wp-content/uploads/2017/02/Regression-Pros-Cons.pdf/">here</a> a cheat-sheet that gives you all the pros and the cons of each regression model.
+Please find  <a href="http://www.superdatascience.com/wp-content/uploads/2017/02/Regression-Pros-Cons.pdf">here</a> a cheat-sheet that gives you all the pros and the cons of each regression model.
 
 2. How do I know which model to choose for my problem ?
 
@@ -514,7 +514,8 @@ the parameters that are learnt, for example the coefficients in Linear Regressio
 the hyperparameters.
 The hyperparameters are the parameters that are not learnt and that are fixed values inside the model equations. For example, the regularization parameter lambda or the penalty parameter C are hyperparameters. So far we used the default value of these hyperparameters, and we haven't searched for their optimal value so that your model reaches even higher performance. Finding their optimal value is exactly what Parameter Tuning is about. So for those of you already interested in improving your model performance and doing some parameter tuning, feel free to jump directly to Part 10 - Model Selection.
 
-And as a BONUS, please find here some slides we made about Regularization.
+And as a BONUS, please find <a href="http://www.superdatascience.com/wp-content/uploads/2017/02/Regularization.pdf">here</a> some slides we made about Regularization.
+	
 
 
 
