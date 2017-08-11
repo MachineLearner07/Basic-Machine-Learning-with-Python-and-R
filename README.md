@@ -78,6 +78,7 @@ Data Preparation = Data Cleansing + Feature Engineering
 
 Regression models (both linear and non-linear) are used for predicting a real value, like salary for example. If yourindependent variable is time, then you are forecasting future values, otherwise your model is predicting present butunknown values. Regression technique vary from Linear Regression to SVR and RandomForests Regression. 
 In this part, you will understand and learn how to implement the following Machine Learning Regression models: 
+
 1. Simple Linear Regression 
 2. Multiple Linear Regression 
 3. Polynomial Regression 
@@ -539,6 +540,11 @@ In this part, you will understand and learn how to implement the following Machi
    **7. Random Forest Classification**
 
 
+  ### 1. Logistic Regression
+  --------------------------
+  ![selection_025](https://user-images.githubusercontent.com/15044221/29221315-221e025c-7ee0-11e7-9008-d04ccad5d755.png)
+  ![selection_026](https://user-images.githubusercontent.com/15044221/29221326-2be6623e-7ee0-11e7-95be-03d75f90bd7c.png)
+  ![selection_027](https://user-images.githubusercontent.com/15044221/29221330-2edac9c6-7ee0-11e7-93cb-8becabe854ae.png)
 
 
 	
