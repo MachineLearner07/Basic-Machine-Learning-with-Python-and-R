@@ -7,7 +7,7 @@
 ##### According to Arthur Samuel : 
 	Field of study that gives computers the ability to learn without being explicitely programmed.
 	
-## Part 1.2 - Data Preprocessing 
+## Part 1 - Data Preprocessing 
 
 Data pre-processing is an important step in the data mining process. The phrase"garbage in, garbage out"is particularly applicable to data mining andmachine learningprojects. Data-gathering methods are often loosely controlled, resulting inout-of-rangevalues (e.g., Income: ?100), impossible data combinations (e.g., Sex: Male, Pregnant: Yes),missing values, etc. Analyzing data that has not been carefully screened for such problems can produce misleading results. Thus, the representation andquality of datais first and foremost before running an analysis. 
 
@@ -72,9 +72,9 @@ X_test = sc_X.transform(X_test)
 
 Data Preparation = Data Cleansing + Feature Engineering 
 
+----------------------------------------------------------------------------------------------------------------------------
 
-
-## Part 2.2  Regression 
+## Part 2  Regression 
 
 Regression models (both linear and non-linear) are used for predicting a real value, like salary for example. If yourindependent variable is time, then you are forecasting future values, otherwise your model is predicting present butunknown values. Regression technique vary from Linear Regression to SVR and RandomForests Regression. 
 In this part, you will understand and learn how to implement the following Machine Learning Regression models: 
@@ -515,6 +515,32 @@ the hyperparameters.
 The hyperparameters are the parameters that are not learnt and that are fixed values inside the model equations. For example, the regularization parameter lambda or the penalty parameter C are hyperparameters. So far we used the default value of these hyperparameters, and we haven't searched for their optimal value so that your model reaches even higher performance. Finding their optimal value is exactly what Parameter Tuning is about. So for those of you already interested in improving your model performance and doing some parameter tuning, feel free to jump directly to Part 10 - Model Selection.
 
 And as a BONUS, please find <a href="http://www.superdatascience.com/wp-content/uploads/2017/02/Regularization.pdf">here</a> some slides we made about Regularization.
+
+----------------------------------------------------------------------------------------------------------------------------
+
+## Part 3 - Classification
+
+Unlike regression where you predict a continuous number, you use classification to predict a category. There is a wide variety of classification applications from medicine to marketing. Classification models include **linear** models like Logistic Regression, SVM, and **nonlinear** *ones like K-NN, Kernel SVM and Random Forests.
+
+In this part, you will understand and learn how to implement the following Machine Learning Classification models:
+    
+    **1. Logistic Regression**
+    
+    **2. K-Nearest Neighbors (K-NN)**
+
+    **3. Support Vector Machine (SVM)**
+    
+    **4. Kernel SVM**
+
+    **5. Naive Bayes**
+    
+    **6. Decision Tree Classification**
+
+    **7. Random Forest Classification**
+
+
+
+
 	
 
 
