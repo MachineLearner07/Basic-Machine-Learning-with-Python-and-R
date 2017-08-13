@@ -547,7 +547,7 @@ In this part, you will understand and learn how to implement the following Machi
   ![selection_027](https://user-images.githubusercontent.com/15044221/29221330-2edac9c6-7ee0-11e7-93cb-8becabe854ae.png)
 
 
-*Logistic Regression code : *
+* Logistic Regression code : *
 ```python
 # Importing the libraries
 import numpy as np
