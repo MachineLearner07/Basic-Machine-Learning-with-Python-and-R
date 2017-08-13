@@ -547,7 +547,7 @@ In this part, you will understand and learn how to implement the following Machi
   ![selection_027](https://user-images.githubusercontent.com/15044221/29221330-2edac9c6-7ee0-11e7-93cb-8becabe854ae.png)
 
 
-* Logistic Regression code : *
+* Logistic Regression code : 
 ```python
 # Importing the libraries
 import numpy as np
@@ -581,6 +581,32 @@ y_pred = classifier.predict(X_test)
 from sklearn.metrics import confusion_matrix
 cm = confusion_matrix(y_test, y_pred)
 ```
+
+* Visualising of Training set results : 
+
+```python
+# Visualising of Training set results
+from matplotlib.colors import ListedColormap
+X_set, y_set = X_train, y_train
+X1, X2 = np.meshgrid(np.arange(start = X_set[:, 0].min() - 1, stop = X_set[:, 0].max() + 1, step = 0.01),
+                     np.arange(start = X_set[:, 1].min() - 1, stop = X_set[:, 1].max() + 1, step = 0.01))
+plt.contourf(X1, X2, classifier.predict(np.array([X1.ravel(), X2.ravel()]).T).reshape(X1.shape), 
+             alpha = 0.75, cmap = ListedColormap(('red', 'green')))
+plt.xlim(X1.min(), X1.max())
+plt.ylim(X2.min(), X2.max())
+for i, j in enumerate(np.unique(y_set)):
+    plt.scatter(X_set[y_set == j, 0], X_set[y_set == j, 1],
+                c = ListedColormap(('red', 'green'))(i), label = j)
+plt.title('Logistic Regresssion (Training set)')
+plt.xlabel('Age')
+plt.ylabel('Estimated Salary')
+plt.legend()
+plt.show()
+```
+
+![selection_029](https://user-images.githubusercontent.com/15044221/29251324-a359a7c8-8074-11e7-8717-0b6cb03e3d51.png)
+
+
 
 
 
