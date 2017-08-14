@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # Basic-Machine-Learning-with-Python-and-R
 
 ## What is Machine Learning ?
@@ -547,6 +546,7 @@ In this part, you will understand and learn how to implement the following Machi
   ![selection_026](https://user-images.githubusercontent.com/15044221/29221326-2be6623e-7ee0-11e7-95be-03d75f90bd7c.png)
   ![selection_027](https://user-images.githubusercontent.com/15044221/29221330-2edac9c6-7ee0-11e7-93cb-8becabe854ae.png)
 
+You will find `Social_Network_Ads.csv`<a href="https://github.com/MachineLearner07/Basic-Machine-Learning-with-Python-and-R/blob/rezwan/Part%203.2%20-%20Classsification/1.%20Logistic%20Regression/Social_Network_Ads.csv">here</a>
 
 **Logistic Regression code**
 ```python
@@ -1266,4 +1266,3 @@ plt.show()
 ![selection_030](https://user-images.githubusercontent.com/15044221/29251391-a2b516d0-8075-11e7-8e0b-f32a520e3697.png)
 
 
->>>>>>> ef266596b288c06aa8498ca43cc30cf8b9938840
