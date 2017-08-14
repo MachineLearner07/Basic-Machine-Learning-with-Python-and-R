@@ -1,20 +1,20 @@
 # Basic-Machine-Learning-with-Python-and-R
 
 ## What is Machine Learning ?
-##### According to Tom Michel : 
+##### According to Tom Michel :
 	A computer program is said to learn from experience E with respect to some class of tasks T and performance measure P, if its performance at tasks in T, as measured by P, improves with experience E.
-	
-##### According to Arthur Samuel : 
+
+##### According to Arthur Samuel :
 	Field of study that gives computers the ability to learn without being explicitely programmed.
-	
-## Part 1.2 - Data Preprocessing 
 
-Data pre-processing is an important step in the data mining process. The phrase"garbage in, garbage out"is particularly applicable to data mining andmachine learningprojects. Data-gathering methods are often loosely controlled, resulting inout-of-rangevalues (e.g., Income: ?100), impossible data combinations (e.g., Sex: Male, Pregnant: Yes),missing values, etc. Analyzing data that has not been carefully screened for such problems can produce misleading results. Thus, the representation andquality of datais first and foremost before running an analysis. 
+## Part 1 - Data Preprocessing
 
-If there is much irrelevant and redundant information present or noisy and unreliable data, thenknowledge discoveryduring the training phase is more difficult. Data preparation and filtering steps can take considerable amount of processing time. Data pre-processing includescleaning,Instance selection,normalization,transformation,feature extractionandselection, etc. The product of data pre-processing is the finaltraining set. Kotsiantis et al. (2006) present a well-known algorithm for each step of data pre-processing. 
+Data pre-processing is an important step in the data mining process. The phrase"garbage in, garbage out"is particularly applicable to data mining andmachine learningprojects. Data-gathering methods are often loosely controlled, resulting inout-of-rangevalues (e.g., Income: ?100), impossible data combinations (e.g., Sex: Male, Pregnant: Yes),missing values, etc. Analyzing data that has not been carefully screened for such problems can produce misleading results. Thus, the representation andquality of datais first and foremost before running an analysis.
+
+If there is much irrelevant and redundant information present or noisy and unreliable data, thenknowledge discoveryduring the training phase is more difficult. Data preparation and filtering steps can take considerable amount of processing time. Data pre-processing includescleaning,Instance selection,normalization,transformation,feature extractionandselection, etc. The product of data pre-processing is the finaltraining set. Kotsiantis et al. (2006) present a well-known algorithm for each step of data pre-processing.
 
 ```python
-# Data Preprocessing 
+# Data Preprocessing
 
 # Importing the libraries
 import numpy as np
@@ -26,7 +26,7 @@ dataset = pd.read_csv('Data.csv')
 X = dataset.iloc[:, :-1].values
 y = dataset.iloc[:, 3].values
 ```
-#### Dataset : 
+#### Dataset :
 ![selection_013](https://cloud.githubusercontent.com/assets/15044221/26520233/428819fa-42f0-11e7-8c1b-b531daccda4b.png)
 ```python
 # Taking care of missing data
@@ -46,7 +46,7 @@ array([['France', 44.0, 72000.0],
        ['France', 48.0, 79000.0],
        ['Germany', 50.0, 83000.0],
        ['France', 37.0, 67000.0]], dtype=object)
-#### Missing values : y -> 
+#### Missing values : y ->
  array(['No', 'Yes', 'No', 'No', 'Yes', 'Yes', 'No', 'Yes', 'No', 'Yes'], dtype=object)
 ```
 ```python
@@ -62,7 +62,7 @@ y = labelencoder_y.fit_transform(y)
 # Splitting the dataset into Training set and Test set
 from sklearn.cross_validation import train_test_split
 X_train, X_test, y_train, y_test = train_test_split(X, y, test_size = 0.2, random_state = 0)
- 
+
 # Feature Scaling
 from sklearn.preprocessing import StandardScaler
 sc_X = StandardScaler()
@@ -70,26 +70,27 @@ X_train = sc_X.fit_transform(X_train)
 X_test = sc_X.transform(X_test)
 ```
 
-Data Preparation = Data Cleansing + Feature Engineering 
+Data Preparation = Data Cleansing + Feature Engineering
 
+----------------------------------------------------------------------------------------------------------------------------
 
+## Part 2  Regression
 
-## Part 2.2  Regression 
+Regression models (both linear and non-linear) are used for predicting a real value, like salary for example. If yourindependent variable is time, then you are forecasting future values, otherwise your model is predicting present butunknown values. Regression technique vary from Linear Regression to SVR and RandomForests Regression.
+In this part, you will understand and learn how to implement the following Machine Learning Regression models:
 
-Regression models (both linear and non-linear) are used for predicting a real value, like salary for example. If yourindependent variable is time, then you are forecasting future values, otherwise your model is predicting present butunknown values. Regression technique vary from Linear Regression to SVR and RandomForests Regression. 
-In this part, you will understand and learn how to implement the following Machine Learning Regression models: 
-1. Simple Linear Regression 
-2. Multiple Linear Regression 
-3. Polynomial Regression 
-4. Support Vector for Regression (SVR) 
-5. Decision Tree Classification 
-6. Random Forest Classification 
-	 
- ### 1. Simple Linear Regression 
+1. Simple Linear Regression
+2. Multiple Linear Regression
+3. Polynomial Regression
+4. Support Vector for Regression (SVR)
+5. Decision Tree Classification
+6. Random Forest Classification
+
+ ### 1. Simple Linear Regression
    -------------------------------
-   ##### 
-   Simple linear regression is a statistical method that allows us to summarize and study relationships between two continuous (quantitative) variables. 
-   
+   #####
+   Simple linear regression is a statistical method that allows us to summarize and study relationships between two continuous (quantitative) variables.
+
 ![selection_005](https://cloud.githubusercontent.com/assets/15044221/26520188/934432bc-42ef-11e7-847c-5f4c2c66d945.png)
 ![selection_004](https://cloud.githubusercontent.com/assets/15044221/26520189/965d2a12-42ef-11e7-894f-5461c5292c2f.png)
 ![selection_003](https://cloud.githubusercontent.com/assets/15044221/26520191/9c00697a-42ef-11e7-8547-aa20a223f7a3.png)
@@ -108,10 +109,10 @@ y = dataset.iloc[:, 1].values
 from sklearn.cross_validation import train_test_split
 X_train, X_test, y_train, y_test = train_test_split(X, y, test_size = 1/3, random_state = 0)
 ```
-#### Dataset : 
+#### Dataset :
 ![selection_006](https://cloud.githubusercontent.com/assets/15044221/26520095/d50c5456-42ed-11e7-8ac3-f6cfb52664a3.png)
 ![selection_007](https://cloud.githubusercontent.com/assets/15044221/26520096/d8ca863a-42ed-11e7-8a65-6746d5ed9476.png)
-#### X_train, X_test, y_train, y_test : 
+#### X_train, X_test, y_train, y_test :
 ![selection_008](https://cloud.githubusercontent.com/assets/15044221/26520097/e0e9e720-42ed-11e7-9b74-ca562c7ef0a3.png)
 ![selection_009](https://cloud.githubusercontent.com/assets/15044221/26520099/e2311e8c-42ed-11e7-8533-ea8ee47a7915.png)
 ```python
@@ -123,7 +124,7 @@ regressor.fit(X_train, y_train)
 # Predicting the Test results
 y_pred = regressor.predict(X_test)
 ```
-#### y_pred : 
+#### y_pred :
 ![selection_010](https://cloud.githubusercontent.com/assets/15044221/26520100/e5d84c4a-42ed-11e7-8cf0-0b817fc5361f.png)
 ```python
 # Visualising the Training set results
@@ -150,7 +151,7 @@ plt.show()
 ![selection_012](https://cloud.githubusercontent.com/assets/15044221/26520103/ed451ac6-42ed-11e7-9b06-9e38fec899ad.png)
 N.B : blue color = Real values, red color = Predicting values
 
- ### 2. Multiple Linear Regression 
+ ### 2. Multiple Linear Regression
   ##### Def:
   	Multiple linear regression (MLR) is a statistical technique that uses several explanatory variables to predict the outcome of a response variable. The goal of multiple linear regression (MLR) is to model the relationship between the explanatory and response variables.
 
@@ -175,7 +176,7 @@ dataset = pd.read_csv('50_Startups.csv')
 X = dataset.iloc[:, :-1].values
 y = dataset.iloc[:, 4].values
 
-###### X : 
+###### X :
 array([[165349.2, 136897.8, 471784.1, 'New York'],
        [162597.7, 151377.59, 443898.53, 'California'],
        [153441.51, 101145.55, 407934.54, 'Florida'],
@@ -301,7 +302,7 @@ import matplotlib.pyplot as plt
 import pandas as pd
 
 # Importing the dataset
-dataset = pd.read_csv('Position_Salaries.csv') 
+dataset = pd.read_csv('Position_Salaries.csv')
 X = dataset.iloc[:, 1:2].values
 y = dataset.iloc[:, 2].values
 ```
@@ -347,7 +348,7 @@ plt.show()
 ##### Predicting a New result
 ```python
 # Predicting a new results with Linear Regression
-lin_reg.predict(6.5) 
+lin_reg.predict(6.5)
 
 Out[35]: array([ 330378.78787879])
 
@@ -369,7 +370,7 @@ import matplotlib.pyplot as plt
 import pandas as pd
 
 # Importing the dataset
-dataset = pd.read_csv('Position_Salaries.csv') 
+dataset = pd.read_csv('Position_Salaries.csv')
 X = dataset.iloc[:, 1:2].values
 y = dataset.iloc[:, 2].values
 
@@ -424,7 +425,7 @@ import matplotlib.pyplot as plt
 import pandas as pd
 
 # Importing the dataset
-dataset = pd.read_csv('Position_Salaries.csv') 
+dataset = pd.read_csv('Position_Salaries.csv')
 X = dataset.iloc[:, 1:2].values
 y = dataset.iloc[:, 2].values
 
@@ -453,14 +454,14 @@ plt.show()
 
 ```python
 # Random Forest Regression
- 
+
 # Importing the libraries
 import numpy as np
 import matplotlib.pyplot as plt
 import pandas as pd
 
 # Importing the dataset
-dataset = pd.read_csv('Position_Salaries.csv') 
+dataset = pd.read_csv('Position_Salaries.csv')
 X = dataset.iloc[:, 1:2].values
 y = dataset.iloc[:, 2].values
 
@@ -515,8 +516,117 @@ the hyperparameters.
 The hyperparameters are the parameters that are not learnt and that are fixed values inside the model equations. For example, the regularization parameter lambda or the penalty parameter C are hyperparameters. So far we used the default value of these hyperparameters, and we haven't searched for their optimal value so that your model reaches even higher performance. Finding their optimal value is exactly what Parameter Tuning is about. So for those of you already interested in improving your model performance and doing some parameter tuning, feel free to jump directly to Part 10 - Model Selection.
 
 And as a BONUS, please find <a href="http://www.superdatascience.com/wp-content/uploads/2017/02/Regularization.pdf">here</a> some slides we made about Regularization.
-	
+
+----------------------------------------------------------------------------------------------------------------------------
+
+## Part 3 - Classification
+
+Unlike regression where you predict a continuous number, you use classification to predict a category. There is a wide variety of classification applications from medicine to marketing. Classification models include **linear** models like Logistic Regression, SVM, and **nonlinear** *ones like K-NN, Kernel SVM and Random Forests*.
+
+In this part, you will understand and learn how to implement the following Machine Learning Classification models:
+
+   **1. Logistic Regression**
+
+   **2. K-Nearest Neighbors (K-NN)**
+
+   **3. Support Vector Machine (SVM)**
+
+   **4. Kernel SVM**
+
+   **5. Naive Bayes**
+
+   **6. Decision Tree Classification**
+
+   **7. Random Forest Classification**
 
 
+  ### 1. Logistic Regression
+  --------------------------
+  ![selection_025](https://user-images.githubusercontent.com/15044221/29221315-221e025c-7ee0-11e7-9008-d04ccad5d755.png)
+  ![selection_026](https://user-images.githubusercontent.com/15044221/29221326-2be6623e-7ee0-11e7-95be-03d75f90bd7c.png)
+  ![selection_027](https://user-images.githubusercontent.com/15044221/29221330-2edac9c6-7ee0-11e7-93cb-8becabe854ae.png)
 
 
+**Logistic Regression code**
+```python
+# Importing the libraries
+import numpy as np
+import matplotlib.pyplot as plt
+import pandas as pd
+
+# Importing the dataset
+dataset = pd.read_csv('Social_Network_Ads.csv')
+X = dataset.iloc[:, [2,3]].values # Age and EstimatedSalary
+y = dataset.iloc[:, 4].values # Purchased
+
+# Spliting the dataset into the Training set and Test set
+from sklearn.cross_validation import train_test_split
+X_train, X_test, y_train, y_test = train_test_split(X, y, test_size = 0.25, random_state = 0)
+
+# Feature Scaling
+from sklearn.preprocessing import StandardScaler
+sc_X = StandardScaler()
+X_train = sc_X.fit_transform(X_train)
+X_test = sc_X.transform(X_test)
+
+# Fitting Logistic Regression to the Training set
+from sklearn.linear_model import LogisticRegression
+classifier = LogisticRegression(random_state = 0)
+classifier.fit(X_train, y_train)
+
+# Predicting the Test set results
+y_pred = classifier.predict(X_test)
+
+# Making the Confusion Matrix
+from sklearn.metrics import confusion_matrix
+cm = confusion_matrix(y_test, y_pred)
+```
+
+* Visualising of Training set results  
+
+```python
+# Visualising of Training set results
+from matplotlib.colors import ListedColormap
+X_set, y_set = X_train, y_train
+X1, X2 = np.meshgrid(np.arange(start = X_set[:, 0].min() - 1, stop = X_set[:, 0].max() + 1, step = 0.01),
+                     np.arange(start = X_set[:, 1].min() - 1, stop = X_set[:, 1].max() + 1, step = 0.01))
+plt.contourf(X1, X2, classifier.predict(np.array([X1.ravel(), X2.ravel()]).T).reshape(X1.shape),
+             alpha = 0.75, cmap = ListedColormap(('red', 'green')))
+plt.xlim(X1.min(), X1.max())
+plt.ylim(X2.min(), X2.max())
+for i, j in enumerate(np.unique(y_set)):
+    plt.scatter(X_set[y_set == j, 0], X_set[y_set == j, 1],
+                c = ListedColormap(('red', 'green'))(i), label = j)
+plt.title('Logistic Regresssion (Training set)')
+plt.xlabel('Age')
+plt.ylabel('Estimated Salary')
+plt.legend()
+plt.show()
+```
+
+![selection_029](https://user-images.githubusercontent.com/15044221/29251324-a359a7c8-8074-11e7-8717-0b6cb03e3d51.png)
+
+
+* Visualising of Test set results
+
+```python
+# Visualising of Test set results
+from matplotlib.colors import ListedColormap
+X_set, y_set = X_test, y_test
+X1, X2 = np.meshgrid(np.arange(start = X_set[:, 0].min() - 1, stop = X_set[:, 0].max() + 1, step = 0.01),
+                     np.arange(start = X_set[:, 1].min() - 1, stop = X_set[:, 1].max() + 1, step = 0.01))
+plt.contourf(X1, X2, classifier.predict(np.array([X1.ravel(), X2.ravel()]).T).reshape(X1.shape),
+             alpha = 0.75, cmap = ListedColormap(('red', 'green')))
+plt.xlim(X1.min(), X1.max())
+plt.ylim(X2.min(), X2.max())
+for i, j in enumerate(np.unique(y_set)):
+    plt.scatter(X_set[y_set == j, 0], X_set[y_set == j, 1],
+                c = ListedColormap(('red', 'green'))(i), label = j)
+plt.title('Logistic Regresssion (Test set)')
+plt.xlabel('Age')
+plt.ylabel('Estimated Salary')
+plt.legend()
+plt.show()
+```
+
+![selection_030](https://user-images.githubusercontent.com/15044221/29251391-a2b516d0-8075-11e7-8e0b-f32a520e3697.png)
