@@ -631,3 +631,14 @@ plt.show()
 ```
 
 ![selection_030](https://user-images.githubusercontent.com/15044221/29251391-a2b516d0-8075-11e7-8e0b-f32a520e3697.png)
+
+
+  ### 2. K-Nearest Neighbors (K-NN)
+  
+![selection_031](https://user-images.githubusercontent.com/15044221/29266909-3fdba216-8108-11e7-8df5-31c6ec4a3f95.png)
+![selection_032](https://user-images.githubusercontent.com/15044221/29266913-44240908-8108-11e7-9857-138780e9b612.png)
+![selection_034](https://user-images.githubusercontent.com/15044221/29266922-4d825fd6-8108-11e7-9633-6c462cd78ca0.png)
+![selection_033](https://user-images.githubusercontent.com/15044221/29266933-5919de0a-8108-11e7-8f84-f2408c30ec0d.png)
+![selection_035](https://user-images.githubusercontent.com/15044221/29266938-5db397b2-8108-11e7-838b-24ee37b2462f.png)
+![selection_036](https://user-images.githubusercontent.com/15044221/29266945-62ed8c24-8108-11e7-8be0-4d5e4c5ad847.png)
+![selection_037](https://user-images.githubusercontent.com/15044221/29266952-67975a3e-8108-11e7-9e2e-a164dc555bbb.png)
