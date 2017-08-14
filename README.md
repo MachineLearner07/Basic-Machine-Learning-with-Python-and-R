@@ -724,3 +724,14 @@ plt.show()
 ```
 ![selection_039](https://user-images.githubusercontent.com/15044221/29279923-3318012c-813b-11e7-9cb8-f9069488efc5.png)
 
+
+### 3. Support Vector Machine (SVM)
+
+![selection_040](https://user-images.githubusercontent.com/15044221/29281794-30958274-8142-11e7-81c4-3d4bca05812c.png)
+![selection_041](https://user-images.githubusercontent.com/15044221/29281795-313b83b8-8142-11e7-9acd-bbaeab1b1411.png)
+![selection_042](https://user-images.githubusercontent.com/15044221/29281798-336a2da6-8142-11e7-9f56-123c1629dd9c.png)
+![selection_044](https://user-images.githubusercontent.com/15044221/29281803-383175a6-8142-11e7-8a39-a9572bdc3e97.png)
+![selection_045](https://user-images.githubusercontent.com/15044221/29281808-3c46c8bc-8142-11e7-82d6-ca7f498b6dd5.png)
+![selection_046](https://user-images.githubusercontent.com/15044221/29281812-3e6afa50-8142-11e7-96f5-7f6f3b047c7a.png)
+
+
