@@ -19,11 +19,11 @@ How do I know which model to choose for my problem ?
 How can I improve each of these models ?
 Let's answer each of these questions one by one:
 
-1. What are the pros and cons of each model ?
+- 1. What are the pros and cons of each model ?
 
 Please find  <a href="http://www.superdatascience.com/wp-content/uploads/2017/02/Regression-Pros-Cons.pdf">here</a> a cheat-sheet that gives you all the pros and the cons of each regression model.
 
-2. How do I know which model to choose for my problem ?
+- 2. How do I know which model to choose for my problem ?
 
 First, you need to figure out whether your problem is linear or non linear. You will learn how to do that in Part 10 - Model Selection. Then:
 
@@ -31,7 +31,7 @@ If your problem is linear, you should go for Simple Linear Regression if you onl
 
 If your problem is non linear, you should go for Polynomial Regression, SVR, Decision Tree or Random Forest. Then which one should you choose among these four ? That you will learn in Part 10 - Model Selection. The method consists of using a very relevant technique that evaluates your models performance, called k-Fold Cross Validation, and then picking the model that shows the best results. Feel free to jump directly to Part 10 if you already want to learn how to do that.
 
-3. How can I improve each of these models ?
+- 3. How can I improve each of these models ?
 
 In Part 10 - Model Selection, you will find the second section dedicated to Parameter Tuning, that will allow you to improve the performance of your models, by tuning them. You probably already noticed that each model is composed of two types of parameters:
 
