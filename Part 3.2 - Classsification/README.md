@@ -4,11 +4,11 @@ Unlike regression where you predict a continuous number, you use classification 
 
 In this part, you will understand and learn how to implement the following Machine Learning Classification models:
 
-   **1. Logistic Regression**
+   [**1. Logistic Regression**](https://github.com/MachineLearner07/Basic-Machine-Learning-with-Python-and-R/tree/rezwan/Part%203.2%20-%20Classsification/1.%20Logistic%20Regression)
 
-   **2. K-Nearest Neighbors (K-NN)**
+   [**2. K-Nearest Neighbors (K-NN)**](https://github.com/MachineLearner07/Basic-Machine-Learning-with-Python-and-R/tree/rezwan/Part%203.2%20-%20Classsification/2.%20K-Nearest%20Neighbors%20(K-NN))
 
-   **3. Support Vector Machine (SVM)**
+   [**3. Support Vector Machine (SVM)**](https://github.com/MachineLearner07/Basic-Machine-Learning-with-Python-and-R/tree/rezwan/Part%203.2%20-%20Classsification/3.%20Support%20Vector%20Machine%20(SVM))
 
    **4. Kernel SVM**
 
