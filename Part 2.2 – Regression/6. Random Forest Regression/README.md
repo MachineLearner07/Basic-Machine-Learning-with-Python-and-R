@@ -1,4 +1,4 @@
-### 5. Random Forest Regresion
+### 6. Random Forest Regresion
 ![capture9](https://cloud.githubusercontent.com/assets/15044221/26793070/6d23aa9e-4a3e-11e7-8515-e868ae981288.PNG)
 
 ```python
