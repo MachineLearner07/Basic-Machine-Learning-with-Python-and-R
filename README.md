@@ -6,6 +6,13 @@
 
 ##### According to Arthur Samuel :
 	Field of study that gives computers the ability to learn without being explicitely programmed.
+	
+	
+## Table Content
+
+- [Data Prepoessing](#Part 1 - Data Preprocessing)
+
+- [Classification](#Part 3 - Classification)
 
 ## Part 1 - Data Preprocessing
 
