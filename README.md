@@ -13,6 +13,7 @@
 - [Data Prepoessing](https://github.com/MachineLearner07/Basic-Machine-Learning-with-Python-and-R/tree/rezwan/Part%201.2%20-%20Data%20Preprocessing)
 
 - [Regression](https://github.com/MachineLearner07/Basic-Machine-Learning-with-Python-and-R/tree/rezwan/Part%202.2%20%E2%80%93%20Regression)
+    - [Simple Linear Regression](https://github.com/MachineLearner07/Basic-Machine-Learning-with-Python-and-R/tree/rezwan/Part%202.2%20%E2%80%93%20Regression/1.%20Simple%20Linear%20Regression)
 
 ## Part 1 - Data Preprocessing
 
