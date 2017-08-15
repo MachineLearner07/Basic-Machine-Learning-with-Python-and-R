@@ -10,9 +10,9 @@
 	
 ## Table Content
 
-- [Data Prepoessing](#Part 1 - Data Preprocessing)
+- [Data Prepoessing](#Part-1-Data-Preprocessing)
 
-- [Classification](#Part 3 - Classification)
+- [Classification](#Part-3-Classification)
 
 ## Part 1 - Data Preprocessing
 
