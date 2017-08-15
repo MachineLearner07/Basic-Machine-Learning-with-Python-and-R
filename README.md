@@ -14,6 +14,11 @@
 
 - [Regression](https://github.com/MachineLearner07/Basic-Machine-Learning-with-Python-and-R/tree/rezwan/Part%202.2%20%E2%80%93%20Regression)
     - [Simple Linear Regression](https://github.com/MachineLearner07/Basic-Machine-Learning-with-Python-and-R/tree/rezwan/Part%202.2%20%E2%80%93%20Regression/1.%20Simple%20Linear%20Regression)
+    - [Multiple Linear Regression](https://github.com/MachineLearner07/Basic-Machine-Learning-with-Python-and-R/tree/rezwan/Part%202.2%20%E2%80%93%20Regression/2.%20Multiple%20Linear%20Regression)
+    - [Polynomial Regression](https://github.com/MachineLearner07/Basic-Machine-Learning-with-Python-and-R/tree/rezwan/Part%202.2%20%E2%80%93%20Regression/3.%20Polynomial%20Regression)
+    - [Support Vector for Regression (SVR)](https://github.com/MachineLearner07/Basic-Machine-Learning-with-Python-and-R/tree/rezwan/Part%202.2%20%E2%80%93%20Regression/4.%20Support%20Vector%20for%20Regression%20(SVR))
+    - [Decision Tree Regression](https://github.com/MachineLearner07/Basic-Machine-Learning-with-Python-and-R/tree/rezwan/Part%202.2%20%E2%80%93%20Regression/5.%20Decision%20Tree%20Regression)
+    - [Random Forest Regression](https://github.com/MachineLearner07/Basic-Machine-Learning-with-Python-and-R/tree/rezwan/Part%202.2%20%E2%80%93%20Regression/6.%20Random%20Forest%20Regression)
 
 ## Part 1 - Data Preprocessing
 
