@@ -10,7 +10,7 @@ In this part, you will understand and learn how to implement the following Machi
 
    [**3. Support Vector Machine (SVM)**](https://github.com/MachineLearner07/Basic-Machine-Learning-with-Python-and-R/tree/rezwan/Part%203.2%20-%20Classsification/3.%20Support%20Vector%20Machine%20(SVM))
 
-   **4. Kernel SVM**
+   [**4. Kernel SVM**](https://github.com/MachineLearner07/Basic-Machine-Learning-with-Python-and-R/tree/rezwan/Part%203.2%20-%20Classsification/4.%20Kernel%20SVM)
 
    **5. Naive Bayes**
 
