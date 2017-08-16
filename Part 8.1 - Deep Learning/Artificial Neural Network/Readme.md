@@ -1,7 +1,6 @@
 ## What will be discussed in this section :
   + The Neuron
   + The Activation Function
-  + How do Neural Networks work
   + How do Neural Networks learn
   + Gradient Descent
   + Stochastic Gradient Descent
@@ -45,4 +44,8 @@ In Neural network, output value can be
   4. Hyperbolic Tangent Function ( [Pictorial View](https://user-images.githubusercontent.com/20562497/29360285-0b25f5ba-82a4-11e7-825b-40f461a417e3.png) )
   
 For Additional Reading about Activation Functions : [glorot11a.pdf](https://github.com/MachineLearner07/Basic-Machine-Learning-with-Python-and-R/files/1227932/glorot11a.pdf)
+
+### How do Neural Networks learn
+
+![image](https://user-images.githubusercontent.com/20562497/29366237-4b42ab72-82bb-11e7-8147-3117d1f67aa4.png)
 
