@@ -30,4 +30,5 @@
     - [Logistic Regression](https://github.com/MachineLearner07/Basic-Machine-Learning-with-Python-and-R/tree/rezwan/Part%203.2%20-%20Classsification/1.%20Logistic%20Regression)
     - [K-Nearest Neighbors (K-NN)](https://github.com/MachineLearner07/Basic-Machine-Learning-with-Python-and-R/tree/rezwan/Part%203.2%20-%20Classsification/2.%20K-Nearest%20Neighbors%20(K-NN))
     - [Support Vector Machine (SVM)](https://github.com/MachineLearner07/Basic-Machine-Learning-with-Python-and-R/tree/rezwan/Part%203.2%20-%20Classsification/3.%20Support%20Vector%20Machine%20(SVM))
+    - [Kernel SVM](https://github.com/MachineLearner07/Basic-Machine-Learning-with-Python-and-R/tree/rezwan/Part%203.2%20-%20Classsification/4.%20Kernel%20SVM)
 
