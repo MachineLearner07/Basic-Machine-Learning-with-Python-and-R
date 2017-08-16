@@ -49,3 +49,17 @@ For Additional Reading about Activation Functions : [glorot11a.pdf](https://gith
 
 ![image](https://user-images.githubusercontent.com/20562497/29366237-4b42ab72-82bb-11e7-8147-3117d1f67aa4.png)
 
+> Additional Reading : [Stackexchange](https://stats.stackexchange.com/questions/154879/a-list-of-cost-functions-used-in-neural-networks-alongside-applications)
+
+### Gradient Descent 
+
+> [Additional Reading](http://iamtrask.github.io/2015/07/27/python-network-part2/)
+
+
+### Backpropagation
+
+> [Additional Reading](http://neuralnetworksanddeeplearning.com/chap2.html)
+
+#### Steps for training ANN 
+
+![image](https://user-images.githubusercontent.com/20562497/29370441-270028a0-82c7-11e7-958b-94bac885a5cc.png)
