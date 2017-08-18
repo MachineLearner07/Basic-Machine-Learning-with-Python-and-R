@@ -33,4 +33,5 @@
     - [Kernel SVM](https://github.com/MachineLearner07/Basic-Machine-Learning-with-Python-and-R/tree/rezwan/Part%203.2%20-%20Classsification/4.%20Kernel%20SVM)
     - [Naive Bayes](https://github.com/MachineLearner07/Basic-Machine-Learning-with-Python-and-R/tree/rezwan/Part%203.2%20-%20Classsification/5.%20Naive%20Bayes)
     - [Decision Tree Classification](https://github.com/MachineLearner07/Basic-Machine-Learning-with-Python-and-R/tree/rezwan/Part%203.2%20-%20Classsification/6.%20Decision%20Tree%20Classification)
+    - [Random Forest Classification](https://github.com/MachineLearner07/Basic-Machine-Learning-with-Python-and-R/tree/rezwan/Part%203.2%20-%20Classsification/7.%20Random%20Forest%20Classification)
 
