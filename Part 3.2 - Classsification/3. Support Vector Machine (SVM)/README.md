@@ -44,6 +44,9 @@ y_pred = classifier.predict(X_test)
 from sklearn.metrics import confusion_matrix
 cm = confusion_matrix(y_test, y_pred)
 ```
+- Confusion Matrix
+![selection_118](https://user-images.githubusercontent.com/15044221/29446255-055f506c-840d-11e7-986c-4da9bade4a3f.png)
+
 * Visualising of Training set results
 ```python
 # Visualising of Training set results
