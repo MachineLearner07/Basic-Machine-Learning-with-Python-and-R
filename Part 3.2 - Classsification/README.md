@@ -12,7 +12,7 @@ In this part, you will understand and learn how to implement the following Machi
 
    [**4. Kernel SVM**](https://github.com/MachineLearner07/Basic-Machine-Learning-with-Python-and-R/tree/rezwan/Part%203.2%20-%20Classsification/4.%20Kernel%20SVM)
 
-   **5. Naive Bayes**
+   [**5. Naive Bayes**](https://github.com/MachineLearner07/Basic-Machine-Learning-with-Python-and-R/tree/rezwan/Part%203.2%20-%20Classsification/5.%20Naive%20Bayes)
 
    **6. Decision Tree Classification**
 
