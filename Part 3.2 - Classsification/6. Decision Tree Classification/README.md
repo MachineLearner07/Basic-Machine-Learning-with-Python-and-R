@@ -69,6 +69,8 @@ plt.legend()
 plt.show()
 
 ```
+![selection_130](https://user-images.githubusercontent.com/15044221/29456358-19ac773c-8437-11e7-8407-73128e856b84.png)
+
 - Visualising of Test set results of Decision Tree Classifier
 ```python
 # Visualising of Test set results
@@ -89,3 +91,4 @@ plt.ylabel('Estimated Salary')
 plt.legend()
 plt.show()
 ```
+![selection_131](https://user-images.githubusercontent.com/15044221/29456357-19aafc2c-8437-11e7-9822-7158ae028714.png)
