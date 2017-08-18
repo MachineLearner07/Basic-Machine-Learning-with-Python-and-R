@@ -53,6 +53,8 @@ y_pred = classifier.predict(X_test)
 from sklearn.metrics import confusion_matrix
 cm = confusion_matrix(y_test, y_pred)
 ```
+- Confusion Matrix
+![selection_117](https://user-images.githubusercontent.com/15044221/29446010-c6f098b4-840b-11e7-80ee-5fbaa180c7ce.png)
 
 - Visualising the Training set results of Kernel SVM
 ```python
