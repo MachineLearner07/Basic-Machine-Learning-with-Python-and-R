@@ -14,6 +14,6 @@ In this part, you will understand and learn how to implement the following Machi
 
    [**5. Naive Bayes**](https://github.com/MachineLearner07/Basic-Machine-Learning-with-Python-and-R/tree/rezwan/Part%203.2%20-%20Classsification/5.%20Naive%20Bayes)
 
-   **6. Decision Tree Classification**
+   [**6. Decision Tree Classification**](https://github.com/MachineLearner07/Basic-Machine-Learning-with-Python-and-R/tree/rezwan/Part%203.2%20-%20Classsification/6.%20Decision%20Tree%20Classification)
 
    **7. Random Forest Classification**
