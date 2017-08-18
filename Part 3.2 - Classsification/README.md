@@ -17,3 +17,5 @@ In this part, you will understand and learn how to implement the following Machi
    [**6. Decision Tree Classification**](https://github.com/MachineLearner07/Basic-Machine-Learning-with-Python-and-R/tree/rezwan/Part%203.2%20-%20Classsification/6.%20Decision%20Tree%20Classification)
 
    [**7. Random Forest Classification**](https://github.com/MachineLearner07/Basic-Machine-Learning-with-Python-and-R/tree/rezwan/Part%203.2%20-%20Classsification/7.%20Random%20Forest%20Classification)
+   
+   [- Evaluating Classification Models Performance](https://github.com/MachineLearner07/Basic-Machine-Learning-with-Python-and-R/blob/rezwan/Part%203.2%20-%20Classsification/Evaluating%20Classification%20Models%20Performance/README.md)
