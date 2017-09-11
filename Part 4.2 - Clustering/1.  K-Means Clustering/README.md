@@ -1,4 +1,4 @@
-# K-Means Clustering
+# 1. K-Means Clustering
 
 ![selection_151](https://user-images.githubusercontent.com/15044221/30259569-e725aa08-96e3-11e7-9c3f-ed7fb372de47.png)
 ![selection_152](https://user-images.githubusercontent.com/15044221/30259573-e764abae-96e3-11e7-8d0c-3bbb33cc71da.png)
@@ -23,3 +23,54 @@
 ![selection_171](https://user-images.githubusercontent.com/15044221/30259593-e83e7bfe-96e3-11e7-8c6e-12a6c2339265.png)
 ![selection_172](https://user-images.githubusercontent.com/15044221/30259594-e843a1a6-96e3-11e7-8bd5-d1fe385ebe51.png)
 ![selection_173](https://user-images.githubusercontent.com/15044221/30259595-e84682fe-96e3-11e7-830c-b7850b1c82e4.png)
+
+You will find `Mall_Customers.csv` <a href="https://github.com/MachineLearner07/Basic-Machine-Learning-with-Python-and-R/blob/rezwan/Part%204.2%20-%20Clustering/1.%20%20K-Means%20Clustering/Mall_Customers.csv"> here</a>
+
+**K-Means Clustering code**
+```python
+# Importing the libraries
+import numpy as np
+import matplotlib.pyplot as plt
+import pandas as pd
+
+# Importing the Mall_Customers dataset with pandas
+dataset = pd.read_csv('Mall_Customers.csv')
+X = dataset.iloc[:, [3,4]].values
+
+# Using the Elbow method to find the optimal number of clusters
+from sklearn.cluster import KMeans
+wcss = []
+for i in range(1, 11):
+    kmeans = KMeans(n_clusters = i, init = 'k-means++', max_iter = 300, n_init = 10, random_state = 0)
+    kmeans.fit(X)
+    wcss.append(kmeans.inertia_)
+plt.plot(range(1, 11), wcss)
+plt.title('The Elbow Method')
+plt.xlabel('Number of clusters')
+plt.ylabel('WCSS')
+plt.show()
+```
+**Curve Elbow method**
+![selection_182](https://user-images.githubusercontent.com/15044221/30259840-65e9218e-96e5-11e7-8a8e-1620ce011218.png)
+
+```python
+# Applying k-means to the mall dataset
+kmeans = KMeans(n_clusters = 5, init = 'k-means++', max_iter = 300, n_init = 10, random_state = 0)
+y_means = kmeans.fit_predict(X)
+
+# Visualising the clusters
+plt.scatter(X[y_means == 0, 0], X[y_means == 0,1], s = 100, c = 'red' , label = 'Careful')
+plt.scatter(X[y_means == 1, 0], X[y_means == 1,1], s = 100, c = 'blue' , label = 'Standard')
+plt.scatter(X[y_means == 2, 0], X[y_means == 2,1], s = 100, c = 'green' , label = 'Traget')
+plt.scatter(X[y_means == 3, 0], X[y_means == 3,1], s = 100, c = 'cyan' , label = 'Careless')
+plt.scatter(X[y_means == 4, 0], X[y_means == 4,1], s = 100, c = 'magenta' , label = 'Sensible')
+plt.scatter(kmeans.cluster_centers_[:, 0], kmeans.cluster_centers_[:, 1], s = 300, c = 'yellow', label = 'Centroids')
+plt.title('Clusters of clients')
+plt.xlabel('Annual Income (k$)')
+plt.ylabel('Spending Score (1-100)')
+plt.legend()
+plt.show()
+```
+**Visualizing of Dataset**
+![selection_183](https://user-images.githubusercontent.com/15044221/30259841-66040b16-96e5-11e7-91e4-5a7cef89b194.png)
+
