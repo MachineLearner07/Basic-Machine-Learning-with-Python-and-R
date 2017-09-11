@@ -40,4 +40,5 @@
 - [Clustering](https://github.com/MachineLearner07/Basic-Machine-Learning-with-Python-and-R/tree/rezwan/Part%204.2%20-%20Clustering) 
 
     - [K-Means Clustering](https://github.com/MachineLearner07/Basic-Machine-Learning-with-Python-and-R/tree/rezwan/Part%204.2%20-%20Clustering/1.%20%20K-Means%20Clustering)
+    - [Hierarchical Clustering](https://github.com/MachineLearner07/Basic-Machine-Learning-with-Python-and-R/tree/rezwan/Part%204.2%20-%20Clustering/2.%20Hierarchical%20Clustering)
 
