@@ -5,6 +5,7 @@ Created on Sun Aug 20 22:12:10 2017
 
 @author: Md. Rezwanul Haque
 """
+# reset -f
 # Importing the libraries
 import numpy as np
 import matplotlib.pyplot as plt
