@@ -1,5 +1,4 @@
-
-#K-Means Clustering
+# K-Means Clustering
 
 ![selection_151](https://user-images.githubusercontent.com/15044221/30259569-e725aa08-96e3-11e7-9c3f-ed7fb372de47.png)
 ![selection_152](https://user-images.githubusercontent.com/15044221/30259573-e764abae-96e3-11e7-8d0c-3bbb33cc71da.png)
