@@ -50,7 +50,9 @@ plt.xlabel('Number of clusters')
 plt.ylabel('WCSS')
 plt.show()
 ```
+
 **Curve Elbow method**
+
 ![selection_182](https://user-images.githubusercontent.com/15044221/30259840-65e9218e-96e5-11e7-8a8e-1620ce011218.png)
 
 ```python
@@ -71,6 +73,8 @@ plt.ylabel('Spending Score (1-100)')
 plt.legend()
 plt.show()
 ```
+
 **Visualizing of Dataset**
+
 ![selection_183](https://user-images.githubusercontent.com/15044221/30259841-66040b16-96e5-11e7-91e4-5a7cef89b194.png)
 
