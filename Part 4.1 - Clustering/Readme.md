@@ -20,6 +20,6 @@ Wrong Classification
 
 ![image](https://user-images.githubusercontent.com/20562497/31104261-d8488822-a7fd-11e7-9842-28b5a0b0d4fd.png)
 
-` N.B : The lesser the WCSS value, Higher the cluster, Data points Also fit Better.
+` N.B : The lesser the WCSS value, Higher the cluster, Data points Also fit Better.`
 
 ![image](https://user-images.githubusercontent.com/20562497/31104519-385a952e-a7ff-11e7-842b-92fcef643450.png)
