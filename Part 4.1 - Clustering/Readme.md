@@ -23,3 +23,20 @@ Wrong Classification
 ` N.B : The lesser the WCSS value, Higher the cluster, Data points Also fit Better.`
 
 ![image](https://user-images.githubusercontent.com/20562497/31104519-385a952e-a7ff-11e7-842b-92fcef643450.png)
+
+
+### Hierarchical Clustering ( HC ) Intuition
+
+There are two types of HC. They are
+1. Agglomerative : Bootom Up Approach
+2. Divisive : 
+
+`Work flow of HC : `
+
+![image](https://user-images.githubusercontent.com/20562497/31104868-8e0c6a22-a801-11e7-8d37-ce83d4eb5f49.png)
+
+![image](https://user-images.githubusercontent.com/20562497/31104914-f7d6e130-a801-11e7-9998-37278e58a2d4.png)
+
+`How do Dendograms Work ?`
+
+![image](https://user-images.githubusercontent.com/20562497/31105092-4ea8c2a2-a803-11e7-8927-860832801a47.png)
