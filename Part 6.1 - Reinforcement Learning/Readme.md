@@ -6,3 +6,12 @@ Intelligence when training machines to perform tasks such as walking. Desired ou
 provide the AI with reward, undesired with punishment. Machines learn through trial and error.
 ```
 
+### UCB Workflow
+
+![image](https://user-images.githubusercontent.com/20562497/31229208-c9fb4f74-aa01-11e7-935b-fd1c10b0385e.png)
+
+
+### Thompson Sampling 
+
+![image](https://user-images.githubusercontent.com/20562497/31236624-73b138b2-aa16-11e7-9574-5d6c18daaa0b.png)
+
